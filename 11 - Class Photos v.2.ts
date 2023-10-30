@@ -31,7 +31,7 @@ export function classPhotosV2(redShirtHeights: number[], blueShirtHeights: numbe
     redShirtHeights.sort((a, b) => b - a);
     blueShirtHeights.sort((a, b) => b - a);
 
-    const shirtColorInFirstRow = redShirtHeights[0] > blueShirtHeights[0] ? 'RED' : 'BLUE';
+    const shirtColorInFirstRow = redShirtHeights[0] < blueShirtHeights[0] ? 'RED' : 'BLUE';
 
     for (let idx = 0; idx < redShirtHeights.length; idx++) {
         const redShirtHeight = redShirtHeights[idx];
